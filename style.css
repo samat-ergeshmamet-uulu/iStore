@@ -26,8 +26,13 @@ html{
 <!-- Section 2 (iPhone) -->
 <!-- End Section 2 (iPhone) --> */
 
-/* <!-- Section 3 (Macbook Air) -->
-<!-- End Section 3 (Macbook Air) --> */
+/* <!-- Section 3 (Macbook Air) */
+body {
+    background-color: var(--black-color);
+    color: var(--white-color);
+    line-height: 1.6;
+}
+/*<!-- End Section 3 (Macbook Air) --> */
 
 /* <!-- Section 4 (Apple watch) -->
 <!-- End Section 4 (Apple watch) --> */
