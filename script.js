@@ -57,6 +57,11 @@ next.addEventListener('click', Element=>{
 prev.addEventListener('click', Element=> {
     prevSlide();
 });
+// Creating carusel
+
+if(auto) {
+    slideInterval = setInterval(nextSlide, intervarTime);
+}
 // <!-- End Section 3 (Macbook Air) --> */
 
 /* <!-- Section 4 (Apple watch) -->
