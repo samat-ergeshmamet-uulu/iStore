@@ -84,7 +84,7 @@ html{
 
 .slide .content {
     position: absolute;
-    bottom: 90px;
+    bottom: 20px;
     left: -600px;
     opacity: 0;
     width: 600px;
@@ -100,7 +100,7 @@ html{
 }
 
 .slide.current .content {
-    opacity: 1;
+    opacity: 0.8;
     transform: translateX(600px);
     transition: all 0.7s ease-in-out 0.5s;
 }
@@ -146,6 +146,30 @@ html{
         transform: translateY(-300px);
     }
 }
+
+#buy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    border: 5px outset rgb(189, 127, 127);
+    background-color: transparent;
+    color: var(--white-color);
+    cursor: pointer;
+    padding: 13px 15px;
+    border-radius: 15px;
+    outline: none;
+    box-shadow:7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+
+}
+
+#buy:active {
+    box-shadow:7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+    transform: translateY(4px);
+    /* Moving button 4px to y-axis */
+}
+
+
 /* Slide Animations */
 
 

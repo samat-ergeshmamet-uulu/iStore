@@ -52,10 +52,18 @@ const prevSlide = () => {
 // Button click
 
 next.addEventListener('click', Element=>{
-    nextSlide();
+    nextSlide(); 
+    if (auto) {
+        clearInterval(slideInterval);
+        slideInterval = setInterval(nextSlide, intervalTime);
+      }
 });
 prev.addEventListener('click', Element=> {
     prevSlide();
+    if (auto) {
+        clearInterval(slideInterval);
+        slideInterval = setInterval(nextSlide, intervalTime);
+      }
 });
 // Creating carusel
 
