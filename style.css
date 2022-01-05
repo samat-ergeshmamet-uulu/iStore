@@ -134,6 +134,17 @@ html{
     -webkit-transform: scale(1.5,1.5);
     -webkit-transition: all 0.3s ease-in-out;
 }
+
+@media(max-width: 500px) {
+    .slide .content {
+        bottom: -300px;
+        left: 0;
+        width: 100%;
+    }
+    .slide.current .content {
+        transform: translateY(-300px);
+    }
+}
 /* Slide Animations */
 
 
