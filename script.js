@@ -4,8 +4,60 @@
 /* <!-- Section 2 (iPhone) -->
 <!-- End Section 2 (iPhone) --> */
 
-/* <!-- Section 3 (Macbook Air) -->
-<!-- End Section 3 (Macbook Air) --> */
+// /* <!-- Section 3 (Macbook Air) -->
+
+const slides = document.querySelectorAll('.slide');
+const next = document.querySelector('#next');
+const prev = document.querySelector('#prev');
+const auto = true;
+const intervarTime = 5000;
+let slideInterval;
+const nextSlide = () => {
+    const current = document.querySelector('.current');
+    //remove current (active class)
+    current.classList.remove('current');
+    //check  for next one 
+    if(current.nextElementSibling) {
+        //Add current to nextSibling
+        current.nextElementSibling.classList.add('current');
+    }
+    else {
+        // go back to the first slide
+
+        slides[0].classList.add('current');
+    }
+
+    setTimeout(() => current.classList.remove('current'));
+};
+
+
+const prevSlide = () => {
+    const current = document.querySelector('.current');
+    //remove current (active class)
+    current.classList.remove('current');
+    //check  for next one 
+    if(current.previousElementSibling) {
+        //Add current to nextSibling
+        current.previousElementSibling.classList.add('current');
+    }
+    else {
+        // go back to the first slide
+
+        slides[slides.length - 1].classList.add('current');
+    }
+
+    setTimeout(() => current.classList.remove('current'));
+};
+
+// Button click
+
+next.addEventListener('click', Element=>{
+    nextSlide();
+});
+prev.addEventListener('click', Element=> {
+    prevSlide();
+});
+// <!-- End Section 3 (Macbook Air) --> */
 
 /* <!-- Section 4 (Apple watch) -->
 <!-- End Section 4 (Apple watch) --> */

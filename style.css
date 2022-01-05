@@ -27,7 +27,7 @@ html{
 <!-- End Section 2 (iPhone) --> */
 
 /* <!-- Section 3 (Macbook Air) */
-body {
+.main-wrapper {
     background-color: var(--black-color);
     color: var(--white-color);
     line-height: 1.6;
@@ -37,6 +37,7 @@ body {
     position: relative;
     overflow: hidden;
     height: 100vh; 
+    width: 100%;
 }
 
 .slide {
@@ -45,14 +46,9 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    /* opacity: 0; */
+    opacity: 0;
     transition: 0.4s ease-in-out;
 }
-
-.slide .current {
-    opacity: 1;
-}
-
 
 .slide:first-child {
     background-image: url('/images/1.jpg');
@@ -64,29 +60,37 @@ body {
 }
 
 .slide:nth-child(2) {
-    background-image: url('/images/2.jpg') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background-image: url('/images/2.jpg');
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .slide:nth-child(3) {
-    background-image: url('/images/1.jpg') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background-image: url('/images/1.jpg');
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
+
+.slide.current {
+    opacity: 1;
+}
+
 
 .slide .content {
     position: absolute;
-    bottom: 70px;
+    bottom: 90px;
     left: -600px;
-    opacity: 1;
+    opacity: 0;
     width: 600px;
     background-color: var(--primary-color);
     color: var(--white-color);
+    font-size: 20px;
     padding: 35px;
 }
 
@@ -94,10 +98,10 @@ body {
     margin-bottom: 10px;
 }
 
-.slide .current .content {
+.slide.current .content {
     opacity: 1;
     transform: translateX(600px);
-    transition: all 0.7s ease-in-out 0.3s;
+    transition: all 0.7s ease-in-out 0.5s;
 }
 
 .buttons button#next {
@@ -127,7 +131,12 @@ body {
 .buttons button:hover {
     background-color: var(--white-color);
     color: #333;
+    -webkit-transform: scale(1.5,1.5);
+    -webkit-transition: all 0.3s ease-in-out;
 }
+/* Slide Animations */
+
+
 /*<!-- End Section 3 (Macbook Air) --> */
 
 /* <!-- Section 4 (Apple watch) -->
