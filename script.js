@@ -12,6 +12,9 @@ const prev = document.querySelector('#prev');
 const auto = true;
 const intervarTime = 5000;
 let slideInterval;
+
+
+//slider
 const nextSlide = () => {
     const current = document.querySelector('.current');
     //remove current (active class)
@@ -70,6 +73,28 @@ prev.addEventListener('click', Element=> {
 if(auto) {
     slideInterval = setInterval(nextSlide, intervarTime);
 }
+
+//-initialize elements for Modal window
+
+var modal = document.getElementById("myModal");
+var open = document.getElementById("buy1");
+var close = document.querySelector("close");
+
+open.onclick = function() {
+    modal.style.display = "block";
+}
+
+close.onclick = function() {
+    modal.style.display = "none";
+}
+//when user click anywhere outside of the windows close
+
+window.onclick = function(event) {
+    if(event.tartet == modal) {
+        modal.style.display = "none";
+    }
+}
+
 // <!-- End Section 3 (Macbook Air) --> */
 
 /* <!-- Section 4 (Apple watch) -->

@@ -147,10 +147,8 @@ html{
     }
 }
 
-#buy {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+#buy, #adToCard{
+    display: inline-block;
     width: 160px;
     border: 5px outset rgb(189, 127, 127);
     background-color: transparent;
@@ -163,11 +161,32 @@ html{
 
 }
 
-#buy:active {
-    box-shadow:7px 6px 28px 1px rgba(0, 0, 0, 0.24);
-    transform: translateY(4px);
-    /* Moving button 4px to y-axis */
-}
+
+/* Modal windows style */
+
+
+#myModal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+
+  .modal-content {
+    background-color: #fefefe;
+    color: sandybrown;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    font-size: 25px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
 
 
 /* Slide Animations */
@@ -179,6 +198,7 @@ html{
 <!-- End Section 4 (Apple watch) --> */
 
 /* <!-- Section 5 (AirPods) -->
+
 <!-- End Section 5 (Airpods) --> */
 
 /* <!-- Section 6 (Contact Us) -->
