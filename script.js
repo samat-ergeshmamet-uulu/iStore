@@ -76,15 +76,13 @@ if(auto) {
 
 //-initialize elements for Modal window
 
-var modal = document.getElementById("myModal");
-var open = document.querySelector("buy1");
-var close = document.getElementById("close");
 
-open.onclick = function() {
+
+open.onclick = () => {
     modal.style.display = "block";
 }
 
-close.onclick = function() {
+close.onclick = () => {
     modal.style.display = "none";
 }
 //when user click anywhere outside of the windows close
@@ -95,6 +93,10 @@ window.onclick = function(event) {
     }
 }
 
+
+var modal = document.getElementById("myModal");
+var open = document.getElementById("buy1");
+var close = document.getElementById("close");
 // <!-- End Section 3 (Macbook Air) --> */
 
 /* <!-- Section 4 (Apple watch) -->
