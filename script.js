@@ -65,7 +65,7 @@ prev.addEventListener('click', Element=> {
     prevSlide();
     if (auto) {
         clearInterval(slideInterval);
-        slideInterval = setInterval(nextSlide, intervalTime);
+        slideInterval = setInterval(nextSlide, intervarTime);
       }
 });
 // Creating carusel
@@ -77,8 +77,8 @@ if(auto) {
 //-initialize elements for Modal window
 
 var modal = document.getElementById("myModal");
-var open = document.getElementById("buy1");
-var close = document.querySelector("close");
+var open = document.querySelector("buy1");
+var close = document.getElementById("close");
 
 open.onclick = function() {
     modal.style.display = "block";
