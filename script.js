@@ -1,16 +1,24 @@
-/* <!-- Section 1 (Showcase) -->
-<!-- End Section 1 (Showcase) --> */
+
 
 /* <!-- Section 2 (iPhone) -->
 <!-- End Section 2 (iPhone) --> */
 
 // /* <!-- Section 3 (Macbook Air) -->
 
+//-initialize elements for Modal window
+
+var modal = document.getElementById("myModal");
+//var open = document.getElementById("buy");
+
+
+//modal window
+var buttons = document.getElementsByClassName("btn");
+
 const slides = document.querySelectorAll('.slide');
 const next = document.querySelector('#next');
 const prev = document.querySelector('#prev');
 const auto = true;
-const intervarTime = 5000;
+const intervalTime = 5000;
 let slideInterval;
 
 
@@ -52,6 +60,8 @@ const prevSlide = () => {
     setTimeout(() => current.classList.remove('current'));
 };
 
+
+
 // Button click
 
 next.addEventListener('click', Element=>{
@@ -65,38 +75,31 @@ prev.addEventListener('click', Element=> {
     prevSlide();
     if (auto) {
         clearInterval(slideInterval);
-        slideInterval = setInterval(nextSlide, intervarTime);
+        slideInterval = setInterval(nextSlide, intervalTime);
       }
 });
 // Creating carusel
 
 if(auto) {
-    slideInterval = setInterval(nextSlide, intervarTime);
+    slideInterval = setInterval(nextSlide, intervalTime);
 }
 
-//-initialize elements for Modal window
 
-
-
-open.onclick = () => {
-    modal.style.display = "block";
-}
-
-close.onclick = () => {
-    modal.style.display = "none";
-}
-//when user click anywhere outside of the windows close
-
-window.onclick = function(event) {
-    if(event.tartet == modal) {
-        modal.style.display = "none";
+for(let i= 0; i<= buttons.length; i++) 
+{
+    buttons[i].onclick = () => {
+        modal.style.display = "block";
     }
 }
+// close.onclick = () => {
+//     modal.style.display = "none";
+// }
+
+function clos() {
+    modal.style.display = "none";
+}
 
 
-var modal = document.getElementById("myModal");
-var open = document.getElementById("buy1");
-var close = document.getElementById("close");
 // <!-- End Section 3 (Macbook Air) --> */
 
 /* <!-- Section 4 (Apple watch) -->
