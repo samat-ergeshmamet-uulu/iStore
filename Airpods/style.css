@@ -1,0 +1,116 @@
+:root{
+    --primary-color:#6edae6;
+    --white-color:#fff;
+    /*--black-color:#000;*/
+}
+/*Common styles */
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    outline: none;
+    text-decoration: none;
+    font-family: "Work Sans", sans-serif;
+}
+i{
+    float: left;
+    /*margin-left: 0;*/
+    padding-left: 120px;
+    cursor: pointer;
+    font-size: 30px;
+    
+}
+h1{
+    margin:0;
+    padding-bottom: 10px;
+    transform: translateX(4500%);;
+    line-height: 80px; 
+    font-weight: bold;
+    color: rgb(240, 240, 240);
+    font-size: 70px; 
+    text-align: center;
+    width: 10px;
+    border: 5px;
+    /*padding: 5px;*/
+    max-width: 90%;
+    text-align: center;
+    /*border: 1px solid;*/
+    display: inline-block;
+ 
+}
+.bg-white, img{
+    padding-left: 0;
+  
+margin-left: 0px 0px 0px 30px;
+
+    
+}
+
+.btn{
+ 
+    background-color: #6edae6;
+    color:#FFF;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    
+    
+    /*padding: 16px 30px;
+  
+    /*transition: transform 0.2s ease-in;
+    cursor: pointer;
+    text-align: center;  
+    border: none;
+    display: inline-block;
+    margin: auto;
+    width: 15*/
+    
+}
+.btn-hover {
+    transform: translateY(-15px);
+}
+.btn-info{
+    float: left;
+    width:90px;
+            height:50px;
+            position: relative;
+            /*top: 0;*/
+            bottom: 175px;
+            left: 82.5%;
+           margin-top: -100px;
+            margin-right: -100px;
+            text-align: center;
+            border-radius: 20px;
+  
+}
+.btn-light{
+    float:left;
+    background-color: #fff;
+    color: #6edae6;
+    width:90px;
+            height:50px;
+            position: relative;
+            top: 70%;
+            left: 20%;
+           margin-top: -100px;
+            margin-left: -100px;
+            border-radius: 20px;
+}
+.parent{
+    
+    padding: 2em;
+    display: flex;
+    text-align: center;
+    }
+ 
+.bg-white{
+    background-color: #fff;
+    color: #6edae6;
+
+}
+.bg-blue{
+    background-color: #6edae6;
+    color: #fff;
+}
+

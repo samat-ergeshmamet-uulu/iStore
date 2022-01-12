@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find Meal For Your Ingredients</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  <link rel = "stylesheet" href = "style.css">
+  <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+</head>
+<body>
+
+  <div class = "container">
+    <div class = "meal-wrapper">
+      <div class = "meal-search">
+        <h2 class = "title">Which AirPods are
+            right for you?</h2>
+        <blockquote>A magical connection to your devices.
+        </blockquote>
+
+        <div class = "meal-search-box">
+          <input type = "text" class = "search-control" placeholder="Enter your AirPod" id = "search-input">
+          <button type = "submit" class = "search-btn btn" id = "search-btn">
+            <i class = "fas fa-search"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class = "meal-result">
+        <h2 class = "title">Your Search Results:</h2>
+        <div id= "meal">
+          <!-- meal item 1-->
+           <div class = "meal-item">
+            <div class = "meal-img">
+              <img src = "https://multimedia.bbycastatic.ca/multimedia/products/500x500/153/15396/15396948.jpeg" alt = "food">
+            </div>
+            <div class = "meal-name">
+              <h3>AirPods (3rd generation)</h3>
+              <a href = "#" class = "recipe-btn" onclick="openModal()">Learn More</a>
+            </div>
+          </div> 
+          <!-- end of meal item -->
+           <!-- meal item2 -->
+           <div class = "meal-item">
+            <div class = "meal-img">
+              <img src = "https://www.backmarket.es/cdn-cgi/image/format=auto,quality=75,width=1920/https://d1eh9yux7w8iql.cloudfront.net/product_images/None_c1f3523e-1bf1-44dc-a2c7-8909eb815878.jpg" alt = "food">
+            </div>
+            <div class = "meal-name">
+              <h3>AirPods Max</h3>
+              <a class = "recipe-btn" onclick="openModal()">Learn More!!!</a>
+            </div>
+          </div> 
+          <!-- end of meal item -->
+           <!-- meal item 3-->
+           <div class = "meal-item">
+            <div class = "meal-img">
+              <img src = "https://media.ldlc.com/r1600/ld/products/00/05/89/90/LD0005899074_1.jpg" alt = "food">
+            </div>
+            <div class = "meal-name">
+              <h3>AirPods Pro</h3>
+              <a href = "#" class = "recipe-btn" onclick="openModal()">Learn More</a>
+            </div>
+          </div> 
+          <!-- end of meal item -->
+           <!-- meal item 4-->
+           <div class = "meal-item">
+            <div class = "meal-img">
+              <img src = "https://lookagain.scene7.com/is/image/OttoUK/355w/Airpods-with-Wireless-Charging-Case-by-Apple~21R319FRSP.jpg" alt = "food">
+            </div>
+            <div class = "meal-name">
+              <h3>AirPods (2nd generation)</h3>
+              <a href = "#" class = "recipe-btn" onclick="openModal()">Learn More</a>
+            </div>
+          </div> 
+          <!-- end of meal item -->
+           <!-- meal item 5-->
+           <div class = "meal-item">
+            <div class = "meal-img">
+              <img src = "https://cdn.alloallo.media/catalog/product/apple/airpods/airpods-1st-generation/airpods-with-charging-case-white.jpg" alt = "food">
+            </div>
+            <div class = "meal-name">
+              <h3>AirPods (1st generation)</h3>
+              <a href = "#" class = "recipe-btn" onclick="openModal()">Learn More</a>
+            </div>
+          </div> 
+          <!-- end of meal item -->   
+        </div>
+      </div>
+      
+      </div>
+      
+
+      <!-- meal content -->
+      <div class="info">
+          <section class="icon">
+        <i onclick="closeModal()"class="ion-close"></i>
+    </section>
+      <div class = "meal-details-content">
+         <h2 class = "recipe-title">AirPods Name Here</h2>
+        <p class = "recipe-category">Category Name</p>
+        <div class = "recipe-instruct">
+          <h3>Instructions:</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo blanditiis quis accusantium natus! Porro, reiciendis maiores molestiae distinctio veniam ratione ex provident ipsa, soluta suscipit quam eos velit autem iste!</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet aliquam voluptatibus ad obcaecati magnam, esse numquam nisi ut adipisci in?</p>
+        </div>
+        <div class = "recipe-meal-img">
+          <img src = "https://img1.cgtrader.com/items/2160540/1e60ff98b3/large/apple-airpods-pro-3d-model-3d-model-obj-3ds-fbx-c4d-stl-3dm.jpg" alt = "">
+        </div>
+        
+      </div>
+      <div class = "recipe-link">
+        <a href = "#" target = "_blank">Watch Video</a>
+
+      </div> 
+      </div>
+  </div>
+
+
+
+  <script src = "./scr.js"></script>
+</body>
+</html> 
+ 
