@@ -932,13 +932,14 @@ margin-left: 0px 0px 0px 30px;
 
 /* <!-- Section 6 (Contact Us) -->*/
 .img{
-    width: 50px;
+    width: 80px;
     padding: 15px;
   }
   
   .Footercontainer{
     height: 150px;
     margin-top: 10%;
+    width: 100%;;
   }
   /* The Modal (background) */
   .modal {
