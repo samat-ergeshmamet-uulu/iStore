@@ -169,5 +169,36 @@ return play = setInterval(autoplay ,50)
 /* <!-- Section 5 (AirPods) -->
 <!-- End Section 5 (Airpods) --> */
 
-/* <!-- Section 6 (Contact Us) -->
-<!-- End Section 6 (Contact Us) --> */
+/* <!-- Section 6 (Contact Us) --> */
+// Get the modal
+var modal = document.getElementById("myModal1");
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+var email = document.getElementById("email");
+var name1 = document.getElementById("name1");
+var phone = document.getElementById("phone");
+// Get the <span> element that closes the modal
+// var close = document.getElementsByClassName("close_modal_btn");
+
+function openModal() {
+  modal.style.display = "block";
+}
+
+function submitModal() {
+  if(email.value.length === 0 || name1.value.length === 0 || phone.value.length === 0) 
+  {
+   alert("Fill the form") 
+  }
+  else {
+  alert("We received your message. We will contact you soon");
+  modal.style.display = "none";
+  }
+}
+function clos() {
+  modal.style.display = "none";
+}
+
+
+
+
+/*<!-- End Section 6 (Contact Us) --> */
