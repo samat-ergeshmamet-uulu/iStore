@@ -12,7 +12,7 @@ var modal = document.getElementById("myModal");
 
 
 //modal window
-var buttons = document.getElementsByClassName("btn");
+
 
 const slides = document.querySelectorAll('.slide');
 const next = document.querySelector('#next');
@@ -85,15 +85,10 @@ if(auto) {
 }
 
 
-for(let i= 0; i<= buttons.length; i++) 
-{
-    buttons[i].onclick = () => {
-        modal.style.display = "block";
-    }
+function openModal() {
+    modal.style.display = "block";
+
 }
-// close.onclick = () => {
-//     modal.style.display = "none";
-// }
 
 function clos() {
     modal.style.display = "none";
