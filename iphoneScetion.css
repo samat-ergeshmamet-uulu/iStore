@@ -1,0 +1,67 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.ichoose__info{
+	align-items: start;
+}
+.ichoose__color-click{
+	display: flex;
+	}
+.ichoose__text-color{
+   margin: 10px;
+}
+button{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(190, 183, 183, 0.2), 0 6px 20px 0 rgba(201, 193, 193, 0.19);
+  cursor: pointer;
+  margin: 0px 30px 50px 0px;
+}
+.ichoose__12ProMaxSilver{
+  background-color: #f3f5ed; 
+  border: #f2f5e9;
+}
+.ichoose__12ProMaxGraphite{
+  background-color: #827e79; 
+}
+.ichoose__12ProMaxGold{
+  background-color: #f3e0c7; 
+}
+.ichoose__12ProMaxBlue{
+ background-color: #99b3ca; 
+}
+.ichoose__memory ul{
+	display: flex;
+   padding: 0;
+}
+.ichoose__memory li{
+  list-style: none;
+  text-decoration: none;   
+  padding: 8px 12px;
+  margin: 20px 5px 20px 0px;
+  color: grey;
+  border:1px solid #a4a5a8; 
+  cursor: pointer;
+}
+.ichoose__memory li:active{ 
+  border:1px solid #091353; 
+  
+}
+.ichoose__price p{
+	font-size: 30px;
+}
+.ichoose__buy-btn{
+	margin-top: 30px;
+}
+.ichoose__buy-btn>a{
+	padding: 10px 15px;
+	background-color: #5E8BCE;
+	color: #fff;
+	transition: 0.5s;
+}
+.ichoose__buy-btn>a:hover{	 
+	background-color: #166bec;	 
+}
