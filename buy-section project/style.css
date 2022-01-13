@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box;
+}
+
+    a:active{
+    
+        border-style: none;
+        border: 0px;
+    
+ }
+ p{
+    min-width:min-content;
+}
+
+
+.p1{
+    text-align: center;
+    padding-right: 110px;
+    font-size: large;
+}
+
+
+main{
+        padding: 2em;
+        display: flex;
+        
+        }
+.buy{
+  
+  padding-left: 160px;
+  max-height: 3.6em;
+  line-height: 1.8em;
+  position: relative;
+  font-size: 14px;
+  color: black;
+  font-family: sans-serif;
+  width: 750px;
+     
+    
+   
+  
+}
+h2{
+    
+    width: min-content;
+
+}
+h4{
+    color:#6edae6;
+    font-size: 20px;
+     min-width:min-content;
+    
+}
+.btn{
+    padding: 8px 110px;
+    border: none;
+    border-radius: 20px;
+    background-color: #05b0ff;
+    color: #fff;
+
+}
+.bg-img{
+
+bottom: 900px;
+position: absolute;
+  top: 50px;
+  border: 1px solid black;
+  float: right;
+  padding-left: 60%;
+
+}
+.images{
+    overflow:hidden;
+    padding-top: 80px;
+    
+}
+.images img{
+    width: 60px;
+    height:90px;
+    margin:5px;
+    cursor:pointer;
+    transition:.2s;
+}
+ .images img:hover{
+     opacity: .8;
+ }
+ .pre{
+     width: 400px;
+     height: 320px;
+     margin:auto; 
+     position: relative;
+     overflow: hidden;
+     /* display: flex;
+     justify-content: center; */
+
+    }
+    .pre img{
+        width: 100%;
+        height: 100%;
+        text-align: right;
+    }
+    .pre a{
+        color: #fff;
+        font-size: 20px;
+        position: absolute;
+        top:0;
+        right:0;
+        padding:10px;
+        cursor: pointer;
+    }
+    .last-line{
+        -webkit-text-decoration-line: overline;
+        text-decoration-line: overline;
+    }
