@@ -687,8 +687,90 @@
     <div>Airpods</div>
 
     <!-- Section 6 (Contact Us) -->
+    <div class="container">  
+      <div class="footer">        
+        <a href="https://www.apple.com/ru/iphone/"><img class="img" target="_blank"  src="images//footer/iphone.png"></a>   
+        <a href="#"><img class="img" target="_blank" src="/images/footer/macbook.png"></a>   
+        <a href="#"><img class="img" target="_blank" src="/images/footer/apple-watch.png"></a>   
+        <a href="#"><img class="img" target="_blank" src="/images/footer/airpods.png"></a>  
+        <a href="#"><img class="img" target="_blank" src="/images/footer/apple-logo.png"></a>
+        <a href="#"><img class="img" target="_blank" src="/images/footer/contact-us.png" onclick="openModal()"></a> 
+        <p>Copyright 2021 apple inc. All rights reserved</p>
+      </div> 
+    </div>
+    
+    <div class="main-container" id="myModal">
+      <div class="main-container-inner">
+        <div class="main-contact">
+          <div class="box1">
+            <h1>Contact</h1>
+            <div class="line">
+              <hr>
+            </div>					 
+          </div>
+        </div>
+        <div class="main-info">
+          <div class="main-img">
+            <div class="box2">
+              <div class="icons">
+                <ul class="ul-li">
+                  <li><i class="fas fa-mobile-alt"></i></li>
+                  <li class="text">phone</li>
+                  <li>+123 456 789</li>
+                  <li>+987 654 321</li>
+                </ul>						    
+                </div> 
+            </div>
+            <div class="box2">
+              <div class="icons">
+                <ul>
+                  <li><i class="fas fa-map-marker-alt"></i></li>
+                  <li class="text">adress</li>
+                  <li>Main street #123</li>
+                  <li>Main street #123</li>
+                </ul>						   
+                </div> 
+            </div>
+            <div class="box2">
+              <div class="icons">
+                <ul>
+                  <li><i class="far fa-envelope"></i></li>
+                  <li class="text">email</li>
+                  <li>support@codeandcreate.com</li>
+                  <li>slaes@codecreate.com</li>
+                </ul>							   
+                </div> 
+            </div>
+          </div>
+          <div class="fill-contact">
+            <h1>GET IN TOUCH</h1>
+            <form action="">
+              <div class="Contact">
+                <div class="row">
+                  <label for="name"></label>
+                  <input type="text" id="name1" placeholder="Enter your name" required>
+                </div>
+                <div class="row">
+                  <label for="email"></label>
+                  <input type="text" id="email" placeholder="Your email" required>
+                </div>				
+                <div class="row">
+                  <label for="phone"></label>
+                  <input type="number" id="phone" placeholder="Your contact phone" required>
+                </div>
+               </div>
+             </form>	
+            <div class="button block">
+              <button type="submit" id="submit" class="submit" onclick="submitModal()">SEND MESSAGE</button> 
+              <button id="submit" onclick = "clos()">CLOSE</button>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </div> 
     <!-- End Section 6 (Contact Us) -->
     <script src="script.js"></script>
 	 <script src="iphoneSection.js"></script>
+   <script src="https://kit.fontawesome.com/0b267e6c5c.js" crossorigin="anonymous"></script>
 </body>
 </html>
