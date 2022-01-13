@@ -22,9 +22,84 @@ html{
 }
 /* <!-- Section 1 (Showcase) -->
 <!-- End Section 1 (Showcase) --> */
-/* 
-<!-- Section 2 (iPhone) -->
-<!-- End Section 2 (iPhone) --> */
+ 
+/* <!-- Section 2 (iPhone) */
+a{
+	color: inherit;
+	text-decoration: none;
+}
+.container{
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.iphone-wrapper{
+	margin-bottom: 60px;
+	display: grid;
+	grid-template-columns: repeat(auto-fill,270px);
+	gap: 30px 40px;
+	justify-content: center;
+}
+.iphone-header{
+	text-align: center;
+}
+.iphone-header>h1{
+	font-size: 35px;
+}
+.iphone-header>p{
+	font-size: 20px;
+	color: grey;
+	margin-bottom: 20px;
+}
+.product-iphone{
+	background-color: #eeedeb;
+   width: 300px;
+	height: 350px;
+	text-align: center;
+	position: relative;
+	border-radius: 5px;
+}
+.iphone-img{
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+.iphone-back{
+   opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;	 
+	width: 300px;
+	height: 350px;
+	text-align: center;
+	background-color: #F0ECE3;
+	transition: 0.8s ease-in;
+	border-radius: 5px;	
+}
+.iphone-back:hover{
+   opacity: 1;
+}
+.iphone-back h4{
+	margin-top: 100px;
+}
+.iphone-back i{
+	color: #091353;
+	font-size: 30px;
+	margin-top: 10px;
+}
+.iphone-back a{
+	border: 1px solid #091353;
+	padding: 8px 12px;
+}
+.iphone-back a>i{
+ color: #091353;
+ font-size: 15px;
+ margin-left: 10px;
+}
+
+/* End Section 2 (iPhone)  */
 
 /* <!-- Section 3 (Macbook Air) -->
 <!-- End Section 3 (Macbook Air) --> */
