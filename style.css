@@ -81,17 +81,26 @@ a{
 .iphone-back:hover{
    opacity: 1;
 }
-.iphone-back h4{
+.iphone-back>h4{
+	font-size: 20px;
 	margin-top: 100px;
+	color: #091353;
+}
+.iphone-back>p{
+	margin-top: 14px;
+	font-size: 15px;
+	font-weight: bold;
 }
 .iphone-back i{
 	color: #091353;
 	font-size: 30px;
-	margin-top: 10px;
+	margin-top: 12px;
 }
 .iphone-back a{
 	border: 1px solid #091353;
 	padding: 8px 12px;
+	margin-top: 14px;	
+	font-size: 12px;
 }
 .iphone-back a>i{
  color: #091353;
