@@ -1,5 +1,16 @@
 
+// section showcase
+$("#search-icon").click(function() {
+ $(".nav").toggleClass("search");
+  $(".nav").toggleClass("no-search");
+  $(".search-input").toggleClass("search-active");
+});
+$('.menu-toggle').click(function(){
+   $(".nav").toggleClass("mobile-nav");
+ $(this).toggleClass("is-active");
+});
 
+// end of showcase section
 /* <!-- Section 2 (iPhone) -->
 <!-- End Section 2 (iPhone) --> */
 
@@ -170,15 +181,12 @@ return play = setInterval(autoplay ,50)
 <!-- End Section 5 (Airpods) --> */
 
 /* <!-- Section 6 (Contact Us) --> */
-// Get the modal
+
 var modal = document.getElementById("myModal1");
-// Get the button that opens the modal
 var btn = document.getElementById("myBtn");
 var email = document.getElementById("email");
 var name1 = document.getElementById("name1");
 var phone = document.getElementById("phone");
-// Get the <span> element that closes the modal
-// var close = document.getElementsByClassName("close_modal_btn");
 
 function openModal() {
   modal.style.display = "block";

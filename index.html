@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="style.css">
 	 <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -14,7 +15,27 @@
 </head>
 
 <body>
-    <!-- Section 1 (Showcase) -->
+    <!-- Section 1 (Showcase) -->	 
+<div class="nav-wrapper">
+	<div class="grad-bar"></div>
+	<nav class="navbar">
+		<img width="100px" src="./img/appleLogo.png" alt="logo">
+		<div class="menu-toggle" id="mobile-menu">
+			<span class="bar"></span>
+			<span class="bar"></span>
+			<span class="bar"></span>
+		</div>
+		<ul class="nav no-search">
+			<li class="nav-item"><a href="#iphone">ihone 12</a></li>
+			<li class="nav-item"><a href="#laptop">MackBook Air</a></li>
+			<li class="nav-item"><a href="#applewatch">Watch</a></li>
+			<li class="nav-item"><a href="#airpods">Airpods</a></li>
+			<li class="nav-item"><a href="#myModal1" onclick="openModal()">Contact Us</a></li>
+			<i class="fas fa-search" id="search-icon"></i>
+			<input class="search-input" type="text" placeholder="Search..">
+		</ul>
+	</nav>
+</div>
     <!-- End Section 1 (Showcase) -->
 
     <!-- Section 2 (iPhone) -->
@@ -184,16 +205,14 @@
                     <p>iMac</p>
                     <p>From $1299</p>
                   </div>
-                </div>
-                
+                </div>                
                 <div class="grid-product">
                   <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/imac-27-selection-hero-202008?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1594932848000">
                   <div class="grid-detail">
                     <p>iMac Pro</p>
                     <p>From $1299</p>
                   </div>
-                </div>
-                
+                </div>                
                 <div class="grid-product">
                   <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mac-pro-hero-splitter?wid=493&hei=490&fmt=jpeg&qlt=95&.v=1572645163008">
                   <div class="grid-detail">
@@ -448,11 +467,8 @@
  <!-- blogs section starts  -->
 
  <section id="bands" class="blogs">
-
   <h1 class="heading"><span>Apple watch accesories</span> </h1>
-
   <div class="box-container">
-
       <div class="box">
           <div class="image">
               <img src="images/bands.jpeg" alt="">
@@ -464,7 +480,6 @@
               <a href="#" class="btn">read more</a>
           </div>
       </div>
-
       <div class="box">
           <div class="image">
               <img src="images/bands2.jpg" alt="">
@@ -476,7 +491,6 @@
               <a href="#" class="btn">read more</a>
           </div>
       </div>
-
       <div class="box">
           <div class="image">
               <img src="images/bands3.jpg" alt="">
@@ -488,9 +502,7 @@
               <a href="#" class="btn">read more</a>
           </div>
       </div>
-
   </div>
-
  </section>
 
  <!-- blogs section ends -->
@@ -663,26 +675,41 @@
 
     <!-- Section 5 (AirPods) -->
 	<section class="section-airpods" id="airpods">
-		<div class="parent">
+		<div class="airods-container">
 			<h1>AirPods</h1>
-			<div class="box bg-white">
-				<i class="ion-navicon"></i>
-				<div class="img1">
-					<img src="https://lookagain.scene7.com/is/image/OttoUK/553w/airpods-pro-by-apple~39X306FRSP.jpg" alt="">
+			<div class="parent">
+				<div class="parent-inner">
+					<div class="parent-white">
+						<div class="box bg-white">
+							<div class="img1">
+								<img src="https://lookagain.scene7.com/is/image/OttoUK/553w/airpods-pro-by-apple~39X306FRSP.jpg" alt="">
+							</div>
+							<a href="/buy-section project/index.html">
+								<button type="button" class="btn btn-info">Buy</button>
+							</a>
+						</div>
+					</div>
+					<div class="parent-blue">
+						<div class="box bg-blue">
+							<a href="/24/index.html">
+								<button type="button" class="btn btn-light">More</button>
+							</a>
+						   <div class="img1">
+								<img src="https://www.dimprice.com/image/cache/png/apple-airpods-pro/Apple-airpods-pro-02-550x550.png"
+											class="airpods-img-2" alt="">
+							</div>
+						
+						</div>
+					</div>
 				</div>
+
 				<a href="/buy-section project/index.html">
 					<button type="button" class="btn btn-info">Buy</button>
 				</a>
+
 			</div>
-			<div class="box bg-blue">
-				<a href="/24/index.html">
-					<button type="button" class="btn btn-light">Learn More</button>
-				</a>
-				<img src="https://www.dimprice.com/image/cache/png/apple-airpods-pro/Apple-airpods-pro-02-550x550.png"
-					class="airpods-img-2" alt="">
-			</div>
-	
 		</div>
+
 	</section>
     <!-- End Section 5 (Airpods) -->
    
