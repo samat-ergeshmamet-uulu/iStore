@@ -2,6 +2,14 @@
 	padding: 0;
 	margin: 0;
 }
+.iphone-container{
+	width: 90%;
+	margin: 0 auto;
+ }
+ .ichoose__inner{
+	width: 85%;
+	margin: 0 auto; 
+ }
 .ichoose__info{
 	align-items: start;
 }
@@ -10,6 +18,12 @@
 	}
 .ichoose__text-color{
    margin: 10px;
+	font-size: 14px;
+	font-weight: bold;
+}
+.ichoose__info-title{
+	font-size: 20px;
+	margin-top: 30px;
 }
 button{
   width: 30px;
@@ -20,31 +34,36 @@ button{
   cursor: pointer;
   margin: 0px 30px 50px 0px;
 }
-.ichoose__12ProMaxSilver{
+button.ichoose__12ProMaxSilver{
   background-color: #f3f5ed; 
   border: #f2f5e9;
 }
-.ichoose__12ProMaxGraphite{
+button.ichoose__12ProMaxGraphite{
   background-color: #827e79; 
 }
-.ichoose__12ProMaxGold{
+button.ichoose__12ProMaxGold{
   background-color: #f3e0c7; 
 }
-.ichoose__12ProMaxBlue{
+button.ichoose__12ProMaxBlue{
  background-color: #99b3ca; 
+}
+.ichoose__memory{
+	font-size: 14px;
+	font-weight: bold;
 }
 .ichoose__memory ul{
 	display: flex;
    padding: 0;
 }
 .ichoose__memory li{
-  list-style: none;
-  text-decoration: none;   
-  padding: 8px 12px;
-  margin: 20px 5px 20px 0px;
-  color: grey;
-  border:1px solid #a4a5a8; 
-  cursor: pointer;
+    list-style: none;
+    text-decoration: none;
+    padding: 10px 18px;
+    margin: 20px 5px 20px 0px;
+    color: grey;
+    border: 1px solid #a4a5a8;
+    cursor: pointer;
+    font-size: 12px;
 }
 .ichoose__memory li:active{ 
   border:1px solid #091353; 
@@ -54,10 +73,12 @@ button{
 	font-size: 30px;
 }
 .ichoose__buy-btn{
-	margin-top: 30px;
+	padding: 10px 40px;
+	margin-top: 25px;
+	font-size: 14px;
 }
 .ichoose__buy-btn>a{
-	padding: 10px 15px;
+	padding: 10px 25px;
 	background-color: #5E8BCE;
 	color: #fff;
 	transition: 0.5s;
@@ -65,3 +86,49 @@ button{
 .ichoose__buy-btn>a:hover{	 
 	background-color: #166bec;	 
 }
+
+.iphone-desc{
+	margin-bottom: 20px;
+}
+.iphone-desc__header{
+	display: flex;
+}
+.desc-bold{
+	display: flex;
+}
+.iphone-desc__inner{
+   width: 90%;
+	margin: 0 auto;
+}
+.iphone-desc__header{
+	font-size: 20px;
+	color: rgb(51, 50, 50);
+	background-color: lightgrey;
+}
+.iphone-desc__header p{
+   padding: 10px 15px;	
+}
+.desc-bold{
+	align-items: center;
+	/* border: 1px solid rgb(234, 0, 255); */
+}
+.desc-bold>.bold{
+	font-weight: bold;
+	font-size: 17px;
+	padding: 5px 10px 5px 15px;
+	color: #000;
+}
+.desc-bold>p{ 
+	font-size: 15px;
+	margin-left: 20px;
+	color: rgb(105, 103, 103);
+}
+.desc-bold ul li{
+	font-size: 15px;
+	margin-left: 20px;
+	color: rgb(105, 103, 103);
+	padding: 5px;
+}
+
+
+/* CART SECTION  */
