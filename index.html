@@ -20,8 +20,8 @@
 		<section class="iphone">
 			<div class="iphone-container">
 				<div class="iphone-header">
-					<h1>Выберите свой iPhone</h1>
-					<p>Сравните все модели iPhone</p>
+					<h1>Choose your Phone</h1>
+					<p>Compare iPhone Models</p>
 				</div>
 				<div class="iphone-wrapper">
 					<div class="product-iphone">
@@ -120,13 +120,13 @@
 
     <!-- Section 3 (Macbook Air) -->
     <!-- End Section 3 (Macbook Air) -->
-    <div class="main-wrapper">
+    <div class="main-wrapper" id="laptop">
         <div class="slider">
             <div class="slide current">
                 <div class="content">
                     <h1>MacBook Air</h1>
                 <p>Our thinnest, lightest notebook, completely transformed by the Apple M1 chip. CPU speeds up to 3.5x faster. GPU speeds up to 5x faster. Our most advanced Neural Engine for up to 9x faster machine learning. The longest battery life ever in a MacBook Air.</p>
-                <button id="buy"  class="btn"><i class="fas fa-shopping-cart"></i></button>
+                <button id="buy"  onclick="openModal()"><i class="fas fa-shopping-cart"></i></button>
                 <button id="adToCard"><i class="fas fa-shopping-bag"></i></button>
                 </div>
             </div>
@@ -134,7 +134,7 @@
                 <div class="content">
                  <h1>MacBook Pro</h1>
                  <p>The Apple M1 chip gives the 13‑inch MacBook Pro speed and power beyond belief. With up to 2.8x CPU performance. Up to 5x the graphics speed. Our most advanced Neural Engine for up to 11x faster machine learning. And up to 20 hours of battery life so you can go all day.</p>
-                 <button id="buy"  class="btn"><i class="fas fa-shopping-cart"></i></button>
+                 <button id="buy"  onclick="openModal()"><i class="fas fa-shopping-cart"></i></button>
                 <button id="adToCard"><i class="fas fa-shopping-bag"></i></button>
                 </div>
              </div>
@@ -142,7 +142,7 @@
                <div class="content">
                 <h1>Supercharged for pros.</h1>
                 <p>The most powerful MacBook Pro ever is here. With the blazing-fast M1 Pro or M1 Max chip — the first Apple silicon designed for pros — you get groundbreaking performance and amazing battery life. Add to that a stunning Liquid Retina XDR display, the best camera and audio ever in a Mac notebook, and all the ports you need. The first notebook of its kind, this MacBook Pro is a beast.</p>
-                <button id="buy"  class="btn"><i class="fas fa-shopping-cart"></i></button>
+                <button id="buy"  onclick="openModal()"><i class="fas fa-shopping-cart"></i></button>
                 <button id="adToCard"><i class="fas fa-shopping-bag"></i></button>
                </div>
             </div>
@@ -310,7 +310,7 @@
 
 <!-- about section starts  -->
 
-<section class="about">
+<section class="about" id="applewatch">
 
   <h1 class="heading"> <span>Why apple watch?</span></h1>
   <div class="row">
@@ -391,7 +391,7 @@
 
       <div class="box">
           <img src="images/image8.png" alt="">
-          <h3>apple watch series 6 silver stainless</h3>
+          <h3 id="series6">apple watch series 6 silver stainless</h3>
           <div class="price">$350 <span>454</span></div>
           <a href="#" class="btn">Quick view</a>
       </div>
@@ -421,13 +421,13 @@
       </div>
       <div class="box">
           <img src="images/image13.png" alt="">
-          <h3>apple watch series 5 silver</h3>
+          <h3 id="series5">apple watch series 5 silver</h3>
           <div class="price">$300 <span>350</span></div>
           <a href="#" class="btn">Quick view</a>
       </div>
       <div class="box">
           <img src="images/image14.png" alt="">
-          <h3>apple watch series SE gray</h3>
+          <h3 id="se">apple watch series SE gray</h3>
           <div class="price">$300 <span>350</span></div>
           <a href="#" class="btn">Quick view</a>
       </div>
@@ -655,13 +655,13 @@
   <button id="btn-right" class="btn-arrow  fas fa-angle-left"></button>
 </div>
   </section>
-  <button id="btn-right" class="btn-arrow  fas fa-angle-left"></button>
+ 
 </div>
 
     <!-- End Section 4 (Apple watch) -->
 
     <!-- Section 5 (AirPods) -->
-	<section class="section-airpods">
+	<section class="section-airpods" id="airpods">
 		<div class="parent">
 			<h1>AirPods</h1>
 			<div class="box bg-white">
@@ -684,11 +684,92 @@
 		</div>
 	</section>
     <!-- End Section 5 (Airpods) -->
-    <div>Airpods</div>
+   
 
     <!-- Section 6 (Contact Us) -->
+    <div class="Footercontainer">  
+      <div class="footer">        
+        <a href="https://www.apple.com/ru/iphone/"><img class="img" target="_blank"  src="images//footer/iphone.png"></a>   
+        <a href="#laptop"><img class="img"  src="/images/footer/macbook.png"></a>   
+        <a href="#applewatch"><img class="img"  src="/images/footer/apple-watch.png"></a>   
+        <a href="#airpods"><img class="img" src="/images/footer/airpods.png"></a>  
+        <a href="#"><img class="img" target="_blank" src="/images/footer/apple-logo.png"></a>
+        <a href="#"><img class="img" target="_blank" src="/images/footer/contact-us.png" onclick="openModal()"></a> 
+        <p>Copyright 2021 apple inc. All rights reserved</p>
+      </div> 
+    </div>
+    
+    <div class="main-container" id="myModal1">
+      <div class="main-container-inner">
+        <div class="main-contact">
+          <div class="box1">
+            <h1>Contact</h1>
+            <div class="line">
+            </div>					 
+          </div>
+        </div>
+        <div class="main-info">
+          <div class="main-img">
+            <div class="box2">
+              <div class="icons">
+                <ul class="ul-li">
+                  <li><i class="fas fa-mobile-alt"></i></li>
+                  <li class="text">phone</li>
+                  <li>+123 456 789</li>
+                  <li>+987 654 321</li>
+                </ul>						    
+                </div> 
+            </div>
+            <div class="box2">
+              <div class="icons">
+                <ul>
+                  <li><i class="fas fa-map-marker-alt"></i></li>
+                  <li class="text">adress</li>
+                  <li>Main street #123</li>
+                  <li>Main street #123</li>
+                </ul>						   
+                </div> 
+            </div>
+            <div class="box2">
+              <div class="icons">
+                <ul>
+                  <li><i class="far fa-envelope"></i></li>
+                  <li class="text">email</li>
+                  <li>support@codeandcreate.com</li>
+                  <li>slaes@codecreate.com</li>
+                </ul>							   
+                </div> 
+            </div>
+          </div>
+          <div class="fill-contact">
+            <h1>GET IN TOUCH</h1>
+            <form action="">
+              <div class="Contact">
+                <div class="row">
+                  <label for="name"></label>
+                  <input type="text" id="name1" placeholder="Enter your name" required>
+                </div>
+                <div class="row">
+                  <label for="email"></label>
+                  <input type="text" id="email" placeholder="Your email" required>
+                </div>				
+                <div class="row">
+                  <label for="phone"></label>
+                  <input type="number" id="phone" placeholder="Your contact phone" required>
+                </div>
+               </div>
+             </form>	
+            <div class="button block">
+              <button type="submit" id="submit" class="submit" onclick="submitModal()">SEND MESSAGE</button> 
+              <button id="submit" onclick = "clos()">CLOSE</button>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </div> 
     <!-- End Section 6 (Contact Us) -->
     <script src="script.js"></script>
 	 <script src="iphoneSection.js"></script>
+   <script src="https://kit.fontawesome.com/0b267e6c5c.js" crossorigin="anonymous"></script>
 </body>
 </html>
